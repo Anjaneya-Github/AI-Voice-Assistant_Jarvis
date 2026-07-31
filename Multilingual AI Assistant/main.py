@@ -52,7 +52,7 @@ def text_to_speech(text):
 
 
 def gemini_model(user_input):
-    genai.configure(api_key="AIzaSyDB46pgVd0VMtR560OxJcEislc1dVJUL2k")
+    genai.configure(api_key="")
     model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(user_input)
     results = response.text
